@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /* cima baixo esquerda direita */
+        }
+
+        nav{
+            background-color: darkgray;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.389); 
+            /* Sombras nas caixas:
+            deslocamento horizontal, vertical, espalhamento e sombra
+            Outset - sombra pra fora
+            Inset - sombra pra dentro */
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        
+        }
+        nav> a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 5px;
+            /* Vértices arredondadas:
+            - um valor pra deixar todas iguais 
+            - um valor diferente pra cada vértice
+            - dois valores pra fazer um efeito legal  
+            */
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.389);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: darkgray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header> <!--cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav> <!--menu-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--conteúdo principal-->
+        <section id="assuntos"> <!--sessão-->
+
+        </section>
+        <section id="notícias">
+            <article> <!--artigo-->
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum neque pariatur nisi aut quod deserunt nemo. Numquam magnam molestiae, quos, esse odit aut et consequatur nostrum inventore vitae odio sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, soluta animi quis ullam quam ducimus ipsum corrupti asperiores laudantium reprehenderit, sunt assumenda necessitatibus? Repellat dignissimos sapiente tenetur, sint amet facere.</p>
+            </article>
+            <article>
+                <aside> <!--conteúdo em relação ao artigo-->
+                    <p>Artigo escrito pot José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!--rodapé-->
+        <p>Desenvolvido pelo CursoEmVídeo</p>
+    </footer>
+    
+</body>
+</html>

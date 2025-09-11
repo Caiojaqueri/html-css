@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        main{
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;/*larguta mínima da tela*/
+            max-width: 800px;/*largura máxima da tela*/
+            /*o conteúdo se adapta de acordo com o tamanho da tela*/
+            margin:auto;
+        }
+        img{
+            width: 100%;/*a imagem se adapta de acordo com o tamanho da tela porém tem uma forma mais legal de fazer*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius dolorem esse facere officia excepturi sapiente nisi laborum repellendus provident, ut voluptates dolor. Porro totam eaque saepe esse atque Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, optio voluptatem iste odit natus corporis aspernatur fuga expedita voluptatum officia dicta laborum numquam alias saepe ex quidem beatae inventore eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nihil at, sunt ipsam eum, ipsa doloremque ut amet dolore nemo temporibus ad iste eos ullam molestiae! Ab vel nam in! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sint odit est esse non sit nulla! Iste, animi nobis? Atque repellendus aspernatur error soluta minima eligendi hic quasi aut quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam itaque sapiente nam optio aspernatur perferendis exercitationem adipisci velit, porro doloribus quasi cupiditate consequuntur voluptas aliquam odit ipsum consectetur. Quod, ut.</p>
+
+        <picture>
+            <!--pega a imagem menor na pasta do projeto e a partir da largura 800px ela troca da imagem original para essa pequena-->
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina">
+        </picture>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, a deleniti alias similique in omnis vel, quis officia cupiditate non voluptatem, esse ratione. Officia amet vitae repudiandae mollitia similique tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum laborum molestias nulla minus tenetur at magni obcaecati! Animi veritatis non culpa, voluptates nihil quaerat numquam dignissimos! Omnis incidunt molestiae explicabo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, cumque eligendi? Dolorum quas provident, laboriosam nulla nesciunt ullam commodi, doloremque a enim ipsa dolorem, eum obcaecati. Sequi dolorum labore fugit?</p>
+    </main>
+</body>
+</html>

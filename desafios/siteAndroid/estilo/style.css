@@ -1,0 +1,262 @@
+@charset "UTF-8";/*para que o arquivo tenha compatibilidade com acentuações*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*fonte importada do google font*/
+
+
+
+@font-face {/*fonte baixada no computador*/
+    font-family: 'Android';/*demos um nome para ela */
+    src: url('../fontes/idroid.otf') format('opentype');/*pegamos o arquivo na pasta correta*/
+    font-weight: normal;/*peso da fonte*/
+}
+
+
+
+
+
+
+/*pseudo classe root é onde armazenamos variáveis em css*/
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e; 
+
+    --font-padrao: Arial, Verdana, Helvetica, 
+    sans-serif;
+    --font-destaque: 'Bebas Neue', sans-serif;
+    --font-android: 'Android', sans-serif;
+}
+
+
+
+
+
+
+/*seleciona todos os elementos html p, h1, h2, h3 etc
+a margem e o padding de cada elemento estava um dentro do outro, então tirei para melhor configuração*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+body {/*CORPO*/
+    background-color: var(--cor0);/*variável para a cor de fundo */
+    font-family: var(--font-padrao);/*variável para a fonte*/
+}
+
+a.externo::after {/*todo link da classe externo, depois*/
+    content: '\00A0\1F517';
+}
+
+
+
+
+
+
+
+header {/*CABEÇALHO*/
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));/* degradê de cima para baixo da cor 3 até cor5*/
+    min-height: 150px;/*altura mínima */
+    text-align: center;/*centraliza o texto */
+    padding-top: 40px;/*espaço em cima */
+}
+
+header > h1 {/*TÍTULOS PRINCIPAIS DO HEADER*/
+    color: white;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 3em;
+    margin-bottom: 20px;/*espaço embaixo */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.268);/*sombra no texto */
+}
+
+header > p {/*PARÁGRAFOS DO HEADER*/
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+
+    max-width: 500px;/*largura máxima*/
+    padding-left: 10px;/*espaço da esquerda */
+    padding-right: 10px;/*espaço da direita */
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+nav {/*MENU*/
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.262);/*sombra */
+}
+
+nav > a {/*LINKS DO MENU*/
+    color: var(--cor1);
+    padding: 10px;
+    text-decoration: none;/*sem decoração, sublinhado*/
+    font-weight: bold;/*negrito*/
+    transition-duration: 0.5s;/*transição por 0.5 segundo*/
+}
+
+nav > a:hover { /*efeito passar o mouse em cima*/
+    background-color: var(--cor3);/*fundo*/
+    color: var(--cor5);/*cor letra*/
+    border-radius: 5px;/*borda arredondada*/
+}
+
+
+
+
+
+
+main {/*CONTEÚDO PRINCIPAL*/
+    background-color: white;
+    margin: auto;/*centralizado */
+    margin-bottom: 30px;/*espaço embaixo */
+    padding: 10px;
+
+    min-width: 240px;/*minimo de largura de tela */
+    max-width: 1000px;/*máximo de largura de tela */
+
+    border-bottom-left-radius: 10px;/*bordas da esquerda embaixo arredondadas */
+    border-bottom-right-radius: 10px;/*bordas da direira embaixo arredondadas*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.396);/*sombra*/
+}
+
+main img {/*IMAGENS DENTRO DO MAIN*/
+    width: 100%;/*largura */
+}
+
+main img.pequena {/*IMAGEM COM A CLASS */
+    max-width: 350px;/*largura máxima que ele vai crescer*/
+    display: block;/*transforma em bloco */
+    margin: auto;/*centraliza */
+}
+
+main h1 {/*TÍTULOS PRINCIPAIS DO MAIN*/
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8;
+    color: var(--cor5);
+}
+
+main h2 {/*SUBTÍTULOS DO MAIN*/
+    font-family: var(--font-android);
+    font-weight: normal;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);/*degrade começando na cor 1 até ficar tranparente*/
+    text-indent: 8px;/*indentação do texto*/
+}
+
+main p {/*PARÁGRAFOS DO MAIN*/
+    margin: 15px 0px 15px 0px;/*espaço em cima e embaixo */
+    text-align: justify;/*alinha o texto dos dois lados */
+    text-indent: 30px;/*espaço da primeira linha do parágrafo */
+    line-height: 2em;/*espaço entre as linhas */
+    font-size: 1em;/*tamanho da fonte*/
+}
+
+main strong {/*tudo que for strong no main*/
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {/*LINKS DO MAIN*/
+    text-decoration: none;/*sem decoração no texto*/
+    font-weight: bold;/*negrito*/
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 5px;/*espaço de cima e lado*/
+}
+
+main a:hover {/*ao passar o mouse em cima dos links */
+    text-decoration: underline;/*vai ficar sublinhado*/
+    color: var(--cor4);
+}
+
+
+
+
+
+
+div.video {/*DIV DO VÍDEO*/
+    background: var(--cor5);
+    margin: 0px -10px 30px -10px;/*margem cima 0px, direita -20px, baixo 30px, esquerda -20px para encaixar com o main*/
+    padding: 20px;
+    padding-bottom: 59%;
+
+    position: relative;/*fazer ele responsivo*/
+}
+
+div.video > iframe {
+    position: absolute;/*fazer ele responsivo*/
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
+
+aside {/*CONTEÚDO DO ARTIGO*/
+    background-color: var(--cor1);
+    padding: 10px;/*espaço entre a borda e a margem*/
+    border-radius: 10px;/*borda arredondada*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.268);
+}
+
+aside > h3 {/*h3 do aside*/
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;/*quero que a margem cresca 10 px para fora do background pra se encontrar, por isso -10  */
+    border-radius: 10px 10px 0px 0px;/*arredondamento somente em cima direito e em cima esquerda*/
+}
+
+aside > ul {/*os ul do aside*/
+    list-style-type: '\2714\00A0';
+    /*emoji no lugar dos tópicos, 00A0 é o espaço entre o emoji e o tópico, porém essa forma de adicionar emoji não é compativél com todos os navegadores */
+    list-style-position: inside;/*posição das bolinhas da lista ficará dentro */
+    columns: 2;/*dividir em 2 colunas */
+}
+
+
+
+
+
+
+footer {/*RODAPÉ*/
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+    
