@@ -1,13 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {/*font-family coipadas do google fonts*/
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    
 }
 
 html, body {
     min-height: 100vh; /*altura mínima da viewport*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +31,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*transforma o texto em maiúsculo, mas a primeira letra fica maior, estéticamente fica melhor. Tem outra forma de colocar todas as letras em maúsculas - text-transform: uppercase;*/
+    font-family: var(--fonte2);
+    font-size: 10vw; /*tamanho da fonte em relação a largura da view port, assim o tamanho da fonte muda dependendo do tamanho da tela, não é a melhor opção pois ainda não aprendi sobre mediaquery*/
 }
 
 header > p {
@@ -30,6 +44,9 @@ section {
     padding-bottom: 10vh; /*espaço em cima e embaixo de todas as sections para o efeito paralax funcionar */
     line-height: 2em; /*espaçamento entre as linhas*/
     padding-left: 30px; /*espaço da margem esquerda*/
+    font-family: var(--font3);
+    font-size: 3.5vw; /*tamanho da fonte em relação a largura da view port, assim o tamanho da fonte muda dependendo do tamanho da tela, não é a melhor opção pois não aprendi ainda sobre mediaquery*/
+    
 }
 
 section.normal {
@@ -44,7 +61,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(20, 20, 20, 0.705);
-    width: 400px;
+    display: inline-block; /*faz com que a caixa se adapte conforme o conteúdo*/
+    padding: 10px;
 }
 
 a {
