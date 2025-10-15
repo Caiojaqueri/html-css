@@ -45,8 +45,11 @@ section {
     line-height: 2em; /*espaçamento entre as linhas*/
     padding-left: 30px; /*espaço da margem esquerda*/
     font-family: var(--font3);
-    font-size: 3.5vw; /*tamanho da fonte em relação a largura da view port, assim o tamanho da fonte muda dependendo do tamanho da tela, não é a melhor opção pois não aprendi ainda sobre mediaquery*/
-    
+    font-size: 3.5vw; /*tamanho da fonte em relação a largura da view port, assim o tamanho da fonte muda dependendo do tamanho da tela, não é a melhor opção pois não aprendi ainda sobre mediaquery*/ 
+}
+
+section > p {
+    padding-bottom: 2em; /*espaço entre os parágrafos*/
 }
 
 section.normal {
@@ -57,12 +60,26 @@ section.normal {
 section.imagem {
     background-color: rgb(36, 36, 36);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.475);
+    /*sombra interna na caixa*/
+    background-size: cover; /*faz com que a imagem cubra todo o espaço disponível*/
+    background-attachment: fixed; /*faz com que a imagem fique fixa, criando o efeito paralax*/
 }
 
 section.imagem > p {
-    background-color: rgba(20, 20, 20, 0.705);
+    background-color: rgba(20, 20, 20, 0.514);
     display: inline-block; /*faz com que a caixa se adapte conforme o conteúdo*/
     padding: 10px;
+    text-shadow: 1px 1px 0px black /*sombra do texto, 1px para direita, 1px para baixo, desfoque de 0px, cor preta*/
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center; /*alinha a imagem ao centro na vertical e a direita na horizontal*/
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 a {
