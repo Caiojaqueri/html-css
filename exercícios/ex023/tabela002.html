@@ -13,23 +13,36 @@
             color: black;
         }
 
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
         
-        table{
+        table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;/*cabeçalho fixo*/
         }
 
-        td, th{
+        td, th {
             border: 1px solid black ;
             padding: 10px;
         }
 
-        thead, tfoot{
+        thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;/*cabeçalho fixo*/
+            top: -1px;/*cabecalho fixo*/
+            background-color: gray;
+        }
+
+        /*efeito zebrado*/
+        /*nth-child psseudo classe filho */
+        tbody  > tr:nth-child(2n){
+            background-color: lightgray;
         }
 
         td.num {
@@ -55,7 +68,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col">População</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -138,7 +151,7 @@
             </tr>
             <tr>
                 <td>Piauí</td>
-                <td class="num">3 273 227</td>
+                <td class="num">3 273 228</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
@@ -182,5 +195,19 @@
             </tr>
         </tfoot>
     </table>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, consectetur optio consequatur sapiente beatae atque numquam ea maiores ipsa nostrum expedita veniam quas recusandae est. Suscipit ipsam dolorum mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio totam aut labore magni minima soluta nobis, in vel, sed temporibus animi dolore amet! Molestias blanditiis ad nostrum eos quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fuga natus placeat quis dolore. Pariatur excepturi ipsam quo, in explicabo tempora repellendus laudantium molestiae fugiat vitae facere repudiandae odit quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam enim consequatur eligendi inventore id corrupti? Itaque veniam maxime dicta alias molestiae optio, rerum pariatur hic ipsum saepe, cumque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi illo esse quam fuga vero nihil optio ipsa ut obcaecati placeat saepe temporibus minus, ducimus corporis delectus qui, quis vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad nisi deserunt pariatur expedita in, mollitia amet illo fuga illum cum, beatae a aliquam numquam vero dolorum nesciunt veniam quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus molestias deserunt vitae necessitatibus reprehenderit esse libero fugit labore mollitia? Nulla repellat ab cumque illo dolor, vero reiciendis voluptatem sit excepturi. </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, consectetur optio consequatur sapiente beatae atque numquam ea maiores ipsa nostrum expedita veniam quas recusandae est. Suscipit ipsam dolorum mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio totam aut labore magni minima soluta nobis, in vel, sed temporibus animi dolore amet! Molestias blanditiis ad nostrum eos quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fuga natus placeat quis dolore. Pariatur excepturi ipsam quo, in explicabo tempora repellendus laudantium molestiae fugiat vitae facere repudiandae odit quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam enim consequatur eligendi inventore id corrupti? Itaque veniam maxime dicta alias molestiae optio, rerum pariatur hic ipsum saepe, cumque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi illo esse quam fuga vero nihil optio ipsa ut obcaecati placeat saepe temporibus minus, ducimus corporis delectus qui, quis vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad nisi deserunt pariatur expedita in, mollitia amet illo fuga illum cum, beatae a aliquam numquam vero dolorum nesciunt veniam quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus molestias deserunt vitae necessitatibus reprehenderit esse libero fugit labore mollitia? Nulla repellat ab cumque illo dolor, vero reiciendis voluptatem sit excepturi. </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, consectetur optio consequatur sapiente beatae atque numquam ea maiores ipsa nostrum expedita veniam quas recusandae est. Suscipit ipsam dolorum mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio totam aut labore magni minima soluta nobis, in vel, sed temporibus animi dolore amet! Molestias blanditiis ad nostrum eos quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fuga natus placeat quis dolore. Pariatur excepturi ipsam quo, in explicabo tempora repellendus laudantium molestiae fugiat vitae facere repudiandae odit quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam enim consequatur eligendi inventore id corrupti? Itaque veniam maxime dicta alias molestiae optio, rerum pariatur hic ipsum saepe, cumque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi illo esse quam fuga vero nihil optio ipsa ut obcaecati placeat saepe temporibus minus, ducimus corporis delectus qui, quis vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad nisi deserunt pariatur expedita in, mollitia amet illo fuga illum cum, beatae a aliquam numquam vero dolorum nesciunt veniam quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus molestias deserunt vitae necessitatibus reprehenderit esse libero fugit labore mollitia? Nulla repellat ab cumque illo dolor, vero reiciendis voluptatem sit excepturi. </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, consectetur optio consequatur sapiente beatae atque numquam ea maiores ipsa nostrum expedita veniam quas recusandae est. Suscipit ipsam dolorum mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio totam aut labore magni minima soluta nobis, in vel, sed temporibus animi dolore amet! Molestias blanditiis ad nostrum eos quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fuga natus placeat quis dolore. Pariatur excepturi ipsam quo, in explicabo tempora repellendus laudantium molestiae fugiat vitae facere repudiandae odit quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam enim consequatur eligendi inventore id corrupti? Itaque veniam maxime dicta alias molestiae optio, rerum pariatur hic ipsum saepe, cumque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi illo esse quam fuga vero nihil optio ipsa ut obcaecati placeat saepe temporibus minus, ducimus corporis delectus qui, quis vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad nisi deserunt pariatur expedita in, mollitia amet illo fuga illum cum, beatae a aliquam numquam vero dolorum nesciunt veniam quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus molestias deserunt vitae necessitatibus reprehenderit esse libero fugit labore mollitia? Nulla repellat ab cumque illo dolor, vero reiciendis voluptatem sit excepturi. </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, consectetur optio consequatur sapiente beatae atque numquam ea maiores ipsa nostrum expedita veniam quas recusandae est. Suscipit ipsam dolorum mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio totam aut labore magni minima soluta nobis, in vel, sed temporibus animi dolore amet! Molestias blanditiis ad nostrum eos quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fuga natus placeat quis dolore. Pariatur excepturi ipsam quo, in explicabo tempora repellendus laudantium molestiae fugiat vitae facere repudiandae odit quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam enim consequatur eligendi inventore id corrupti? Itaque veniam maxime dicta alias molestiae optio, rerum pariatur hic ipsum saepe, cumque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi illo esse quam fuga vero nihil optio ipsa ut obcaecati placeat saepe temporibus minus, ducimus corporis delectus qui, quis vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad nisi deserunt pariatur expedita in, mollitia amet illo fuga illum cum, beatae a aliquam numquam vero dolorum nesciunt veniam quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus molestias deserunt vitae necessitatibus reprehenderit esse libero fugit labore mollitia? Nulla repellat ab cumque illo dolor, vero reiciendis voluptatem sit excepturi. </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, consectetur optio consequatur sapiente beatae atque numquam ea maiores ipsa nostrum expedita veniam quas recusandae est. Suscipit ipsam dolorum mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio totam aut labore magni minima soluta nobis, in vel, sed temporibus animi dolore amet! Molestias blanditiis ad nostrum eos quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fuga natus placeat quis dolore. Pariatur excepturi ipsam quo, in explicabo tempora repellendus laudantium molestiae fugiat vitae facere repudiandae odit quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam enim consequatur eligendi inventore id corrupti? Itaque veniam maxime dicta alias molestiae optio, rerum pariatur hic ipsum saepe, cumque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi illo esse quam fuga vero nihil optio ipsa ut obcaecati placeat saepe temporibus minus, ducimus corporis delectus qui, quis vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad nisi deserunt pariatur expedita in, mollitia amet illo fuga illum cum, beatae a aliquam numquam vero dolorum nesciunt veniam quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus molestias deserunt vitae necessitatibus reprehenderit esse libero fugit labore mollitia? Nulla repellat ab cumque illo dolor, vero reiciendis voluptatem sit excepturi. </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima natus, consectetur optio consequatur sapiente beatae atque numquam ea maiores ipsa nostrum expedita veniam quas recusandae est. Suscipit ipsam dolorum mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio totam aut labore magni minima soluta nobis, in vel, sed temporibus animi dolore amet! Molestias blanditiis ad nostrum eos quia consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur fuga natus placeat quis dolore. Pariatur excepturi ipsam quo, in explicabo tempora repellendus laudantium molestiae fugiat vitae facere repudiandae odit quis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque ullam enim consequatur eligendi inventore id corrupti? Itaque veniam maxime dicta alias molestiae optio, rerum pariatur hic ipsum saepe, cumque unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nisi illo esse quam fuga vero nihil optio ipsa ut obcaecati placeat saepe temporibus minus, ducimus corporis delectus qui, quis vitae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ad nisi deserunt pariatur expedita in, mollitia amet illo fuga illum cum, beatae a aliquam numquam vero dolorum nesciunt veniam quas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus molestias deserunt vitae necessitatibus reprehenderit esse libero fugit labore mollitia? Nulla repellat ab cumque illo dolor, vero reiciendis voluptatem sit excepturi. </p>
 </body>
 </html>
