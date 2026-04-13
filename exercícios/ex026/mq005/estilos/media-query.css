@@ -1,0 +1,22 @@
+@charset "UTF-8"; 
+
+/*Typical Device Breakpoints 2026
+-----------------------------
+Pequenas telas: 320px - 480px
+Celulares: 481px - 767px
+Tablets: 768px - 1024px
+Desktops: 1025px - 1440px
+Grandes telas: 1441px ou mais
+-----------------------------
+*/
+
+@media screen and (min-width: 768px) {
+    /*para telas maiores que 768px, o menu vai aparecer, ou seja, display block*/
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+}
